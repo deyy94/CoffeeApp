@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class LoginController: UIViewController {
     var users = [User]()
@@ -40,6 +41,35 @@ class LoginController: UIViewController {
         }
     }
     
+    @IBAction func btnBiometricLogin(_ sender: Any) {
+        let context = LAContext()
+        let usertext = "Se requiere validar su identidad"
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: .none){
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: usertext) { succes, error in
+                if succes {
+                    print("Autenticado")
+                    DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "logginSegue", sender: nil)
+                    }
+                }else{
+                    if let error = error as NSError?{
+                        switch error.code{
+                        case LAError.systemCancel.rawValue:
+                            print("La autenticacion a sido cancelada por el sistema")
+                        case LAError.userCancel.rawValue:
+                            print("El usuario a cancelado la autenticacion")
+                        case LAError.userFallback.rawValue:
+                            print("se ha elegido otro metodo de autenticacion")
+                        default: break
+                        }
+                        
+                    }
+                }
+            }
+        }else{
+            print("No se ha autenticado")
+        }
+    }
     @IBAction func btnLogin(_ sender: Any) {
         if lblUser.text == "" && lblPass.text == ""{
             print("Error, campos sin datos")
