@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PgW-4F-3ww">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="coffeAppWatch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Hola Mundo" textAlignment="center" id="TQQ-aZ-cNw"/>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="G5t-6g-EGH"/>
+                        <button width="1" alignment="left" title="Button" id="Scf-pq-b5e">
+                            <connections>
+                                <action selector="btn1" destination="AgC-eL-Hgc" id="xgO-uV-BBs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="k2h-xr-hfG">
+                            <connections>
+                                <action selector="btn2" destination="AgC-eL-Hgc" id="Pjf-eh-r50"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="switchCtrl" destination="G5t-6g-EGH" id="RH9-Ji-Soh"/>
+                        <outlet property="textlbl" destination="TQQ-aZ-cNw" id="CsI-Ln-kWe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="coffeAppWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="coffeAppWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Table Controller-->
+        <scene sceneID="AmM-9s-8Ob">
+            <objects>
+                <controller id="PgW-4F-3ww" customClass="TableController" customModule="coffeAppWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="DCn-NP-80w" customClass="Table">
+                            <items>
+                                <tableRow identifier="MyRowController" id="OQs-kg-vV7" customClass="MyRowController" customModule="coffeAppWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="TF6-Tt-Ny3">
+                                        <items>
+                                            <imageView width="39" height="37" alignment="left" id="sHJ-m1-Uhd"/>
+                                            <label width="79" height="38" alignment="left" text="Label" id="9oq-W8-vvb"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="myImage" destination="sHJ-m1-Uhd" id="u4X-q5-rV1"/>
+                                        <outlet property="myLabel" destination="9oq-W8-vvb" id="q0t-6I-kmu"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow id="u0I-ix-bE9">
+                                    <group key="rootItem" width="1" alignment="left" id="USG-gE-YcK"/>
+                                </tableRow>
+                                <tableRow id="9sV-ur-HbB">
+                                    <group key="rootItem" width="1" alignment="left" id="VJN-mM-8Ve"/>
+                                </tableRow>
+                                <tableRow id="lp3-UW-rgH">
+                                    <group key="rootItem" width="1" alignment="left" id="Sh2-QD-cRW"/>
+                                </tableRow>
+                                <tableRow id="9iv-Gz-s0e">
+                                    <group key="rootItem" width="1" alignment="left" id="z96-KX-VWr"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="DCn-NP-80w" id="vqY-BW-q53"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-110" y="307.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  coffeAppNetec
+
+  Created by David Guillermo Robles Sánchez on 24/01/22.
+  Copyright © 2022 Arlen Peña. All rights reserved.
+*/
+
+
+str_drinks = "Bebidas";
+str_postre = "Postres";
+str_sandwich = "Emparedado";
+
+str_user = "Invitado";
+
+
+product_Mokacino = "Mokaccino";
+product_Caramel = "Caramelo";
+product_Expresso = "Expresso";
+product_Cookie = "Galleta de chocolate";
+product_Muffin = "Muffin de arandanos";
+product_Sandwich = "Emparedado de jamon Serrano";
+product_Cheese = "Sandwich de Queso";
+product_Vegetarian = "Emparedado Vegetariano";
+product_Carrot = "Pastel de zanahoria";
+
+description_moca = "cafe con chocolate";
+description_caramel = "cafe de caramelo";
+description_expresso = "cafe expresso";
+description_cookie = "Galleta de chispas de chocolate";
+description_muffin = "Muffin de Arandanos";
+description_sandwich = "Emparedado de jamon serrano";
+description_cheese = "Sandwich de 3 Quesos";
+description_vegetarian = "Emparedado de vegetales rostizados";
+description_carrot = "Rebanada de pastel de zanahoria";
+
+str_errAccess = "Error de acceso, los datos no inciden";
+
+

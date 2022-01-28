@@ -1,0 +1,60 @@
+
+/* Class = "UITextField"; placeholder = "User name"; ObjectID = "8dY-So-MHt"; */
+"8dY-So-MHt.placeholder" = "Nom d'utilisateur";
+
+/* Class = "UILabel"; text = "Menu"; ObjectID = "9Zj-nf-kfl"; */
+"9Zj-nf-kfl.text" = "Menu";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CqD-Nx-qML"; */
+"CqD-Nx-qML.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "EfL-TI-aDb"; */
+"EfL-TI-aDb.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HVT-2s-azw"; */
+"HVT-2s-azw.text" = "Label";
+
+/* Class = "UILabel"; text = "Bebidas"; ObjectID = "Hdu-R6-3q6"; */
+"Hdu-R6-3q6.text" = "boissons";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JhS-7b-9Dj"; */
+"JhS-7b-9Dj.text" = "Label";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "U2S-v8-Itk"; */
+"U2S-v8-Itk.text" = "Bienvenu";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ugm-DG-erM"; */
+"Ugm-DG-erM.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "User name"; ObjectID = "a3u-FR-40U"; */
+"a3u-FR-40U.placeholder" = "Nom d'utilisateur";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "cWb-IQ-8gM"; */
+"cWb-IQ-8gM.placeholder" = "le mot de passe";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "cZH-6H-wZy"; */
+"cZH-6H-wZy.normalTitle" = "S'inscrire";
+
+/* Class = "UIButton"; normalTitle = "Enter as guest"; ObjectID = "eAy-nq-YlS"; */
+"eAy-nq-YlS.normalTitle" = "Entrez en tant qu'invité";
+
+/* Class = "UILabel"; text = "New Account"; ObjectID = "fk9-Tg-jzJ"; */
+"fk9-Tg-jzJ.text" = "New Account";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "pm9-8u-ODU"; */
+"pm9-8u-ODU.placeholder" = "Mot de passe";
+
+/* Class = "UILabel"; text = "My Favorites"; ObjectID = "qsO-hM-Vyf"; */
+"qsO-hM-Vyf.text" = "Mes favoris";
+
+/* Class = "UILabel"; text = "Welcome:"; ObjectID = "uRp-Yv-QxH"; */
+"uRp-Yv-QxH.text" = "Bienvenue:";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "uUv-if-ZZl"; */
+"uUv-if-ZZl.placeholder" = "E-mail";
+
+/* Class = "UILabel"; text = "l"; ObjectID = "wIQ-4s-szA"; */
+"wIQ-4s-szA.text" = "l";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "znQ-Ya-wyk"; */
+"znQ-Ya-wyk.normalTitle" = "S'inscrire";
